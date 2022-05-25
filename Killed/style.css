@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --red: #e63946;
+  --blue: #457b9d;
+  --light-blue: #a8dadc;
+  --dark-blue: #1d3557;
+  --white: #f1faee;
+}
+
+* {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: var(--dark-blue);
+  overflow-x: hidden;
+}
+
+.total {
+  color: var(--white);
+  font-size: 3vh;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.topContainer {
+  display: flex;
+  color: var(--red);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.arrow {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CARDS */
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  /* padding: 0 5px; */
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 40px -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: var(--red);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.name {
+  font-size: 30px;
+}
